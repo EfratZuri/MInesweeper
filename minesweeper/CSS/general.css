@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+.container {
+	font-family: 'Montserrat', sans-serif;
+	width: 80rem;
+	margin: 0 auto;
+}
+
+.header {
+	margin-bottom: 3rem;
+	display: flex;
+	justify-content: space-between;
+}
+.btn {
+	display: inline-block;
+	cursor: pointer;
+	border: none;
+	font-family: inherit;
+	background-color: transparent;
+}
+.btn:active {
+	transform: translateY(3px);
+}
+.chosen-place {
+	position: relative;
+	background-color: #d00000;
+}
+.chosen-place::after {
+	content: '';
+
+	position: absolute;
+	background-color: inherit;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	z-index: 2;
+}
+.hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+.mine {
+	background-color: #d00000;
+}
+.img {
+	position: relative;
+	top: 0;
+	left: 0;
+
+	height: 5rem;
+	width: 4rem;
+	z-index: 2;
+}
+.actions {
+	display: flex;
+	gap: 2rem;
+
+	align-items: center;
+	justify-content: center;
+
+	margin-bottom: 2rem;
+}
+.actions .btn {
+	padding: 1.6rem 3.2rem;
+	font-size: 1.6rem;
+	background-color: #bee1e6;
+	border-radius: 2rem;
+	transition: all 0.5s;
+}
+.actions .btn:hover,
+.manually-create:hover {
+	color: #fff;
+	background-color: #92ccd5;
+}
+.safe-btn-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.safe-btn-box span {
+	font-size: 1.4rem;
+	transition: color 1s;
+}

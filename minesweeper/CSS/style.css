@@ -1,0 +1,91 @@
+.details {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+	font-size: 3rem;
+	margin-bottom: 3rem;
+}
+.hints-box {
+	margin-bottom: 1rem;
+	text-align: center;
+	font-size: 3rem;
+	cursor: pointer;
+}
+.form {
+	display: flex;
+	gap: 2rem;
+
+	font-size: 1.8rem;
+	justify-content: center;
+
+	transition: opacity 1s;
+}
+.board {
+	transition: opacity 0.5s;
+}
+table {
+	display: table;
+	border-collapse: separate;
+	box-sizing: border-box;
+	text-indent: initial;
+	border-spacing: 2px;
+	margin: 0 auto;
+}
+td {
+	text-align: center;
+	width: 5rem;
+	height: 5rem;
+
+	font-weight: 600;
+	font-size: 1.8rem;
+	font-family: inherit;
+	cursor: pointer;
+	/* padding: 3.2rem; */
+	background-color: #2ec4b6;
+
+	text-align: center;
+
+	transition: background-color 1s ease-out;
+}
+
+.marked {
+}
+.unopened {
+	position: relative;
+	box-sizing: inherit;
+	/* height: 100%; */
+	background-color: #333;
+}
+.unopened::before {
+	content: '';
+	position: absolute;
+	background-color: inherit;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	z-index: 1;
+}
+
+.btn-restart {
+	font-size: inherit;
+	padding: 0.5rem 1rem;
+}
+.manually-create-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.manually-create {
+	padding: 1.6rem 3.2rem;
+	font-size: 1.6rem;
+	background-color: #bee1e6;
+	border-radius: 2rem;
+	transition: all 0.5s;
+}
+.manually-create-box span {
+	color: #d00000;
+	font-size: 1.4rem;
+}
